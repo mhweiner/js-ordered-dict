@@ -27,6 +27,11 @@
 				}
 			}
 		},
+		insert: function(index, key, val){
+			if(this.arr.indexOf(key) !== -1) throw 'key `' + key + '` already exists';
+			this.arr.splice(index, 0, key);
+			this.dict[key] = val;
+		},
 		forEach: function(callback) {
 			for (var i = 0, l = this.arr.length; i < l; i++) {
 				var key = this.arr[i],
