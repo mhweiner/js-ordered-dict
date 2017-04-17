@@ -1,4 +1,4 @@
-(function(exports) {
+(function(root) {
 	"use strict";
 
 	function OrderedDict() {
@@ -58,6 +58,17 @@
 	};
 
 	//export
-	exports.OrderedDict = OrderedDict;
+	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+		module.exports = OrderedDict;
+	} else {
+		if (typeof define === 'function' && define.amd) {
+			define([], function() {
+				return OrderedDict;
+			});
+		}
+		else {
+			root.OrderedDict = OrderedDict;
+		}
+	}
 
-})(typeof exports === "object" && exports || this);
+})(this);
