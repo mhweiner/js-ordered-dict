@@ -5,12 +5,15 @@ A simple, extendable, sortable JavaScript OrderedDict.
 
 ```js
 var a = new OrderedDict();
+
+//set/push
 a.set('Lockheed','P-104 Starfighter');
 a.set('Boeing','777');
 a.set('Cessna','172');
 
-a.values(); //['P-104 Starfighter','777','172'] (respects order)
-a.keys(); //['Lockheed','Boeing','Cessna'] (respects order)
+//get
+a.values(); //['P-104 Starfighter','777','172'] (note: respects order)
+a.keys(); //['Lockheed','Boeing','Cessna'] (note: respects order)
 a.get('Cessna'); //'172'
 a.has('Boeing'); //true
 
