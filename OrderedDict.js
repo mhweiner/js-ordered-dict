@@ -12,6 +12,7 @@
 				this.arr.push(key);
 			}
 			this.dict[key] = val;
+			return this.dict[key];
 		},
 		get: function(key) {
 			return this.dict[key];
@@ -19,7 +20,7 @@
 		has: function(key) {
 			return !!this.dict[key];
 		},
-		remove: function( key ) {
+		remove: function(key) {
 			for (var i = 0, l = this.arr.length; i < l; i++) {
 				if (this.arr[i] === key) {
 					this.arr.splice(i, 1);
