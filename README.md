@@ -39,7 +39,7 @@ a.arr = ['Grumman','Cessna','Bellanca'];
 a.dict = {'Grumman':'Yankee','Cessna':'172','Bellanca':'Citabria'}
 
 //sorting
-a.arr.sort(); //using built-in JavaScript [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+a.arr.sort(); //using built-in Array.prototype.sort()
 a.values(); // ['Citabria','172','Yankee']
 
 ```
