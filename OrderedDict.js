@@ -44,11 +44,10 @@
 			return this.arr;
 		},
 		values: function() {
-			var vals = [];
-			for (var key in this.dict){
-				if (this.dict.hasOwnProperty(key)){
-					vals.push(this.dict[key]);
-				}
+			var vals = [],
+				len = this.arr.length;
+			for(var i = 0; i < len; i++){
+				vals.push(this.dict[this.arr[i]]);
 			}
 			return vals;
 		},
