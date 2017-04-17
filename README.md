@@ -9,10 +9,10 @@ a.set('Lockheed','orange');
 a.set('Boeing','apple');
 a.set('Cessna','banana');
 
-a.values(); // ['orange','apple','banana'] (respects order)
-a.keys(); // ['Lockheed','Boeing','Cessna'] (respects order)
+a.values(); //['orange','apple','banana'] (respects order)
+a.keys(); //['Lockheed','Boeing','Cessna'] (respects order)
 a.get('Three'); //'banana'
-a.has('Two'); / true
+a.has('Two'); //true
 
 //length
 a.size(); //3
@@ -35,8 +35,8 @@ a.clear();
 a.values(); //[]
 
 //accessing properties directly
-a.arr = ['Grumman','Cessna','Bellanca'];
-a.dict = {'Grumman':'Yankee','Cessna':'172','Bellanca':'Citabria'}
+a.arr = ['Grumman','Cessna','Bellanca']; //keys (and order) go here
+a.dict = {'Grumman':'Yankee','Cessna':'172','Bellanca':'Citabria'} //dict goes here
 
 //sorting
 a.arr.sort(); //using built-in Array.prototype.sort()
