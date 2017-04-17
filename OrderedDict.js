@@ -60,4 +60,4 @@
 	//export
 	exports.OrderedDict = OrderedDict;
 
-})(window);
+})(typeof exports === "object" && exports || this);
