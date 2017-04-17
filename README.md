@@ -11,15 +11,15 @@ a.set('Cessna','banana');
 
 a.values(); // ['orange','apple','banana'] (respects order)
 a.keys(); // ['Lockheed','Boeing','Cessna'] (respects order)
-a.get('Three'); // 'banana'
-a.has('Two'); // true
+a.get('Three'); //'banana'
+a.has('Two'); / true
 
 //length
-a.size(); // 3
+a.size(); //3
 
 //removal
 a.remove('Two');
-a.values(); // ['orange','banana']
+a.values(); //['orange','banana']
 
 //iteration
 a.forEach(function( key, value ){
@@ -28,11 +28,11 @@ a.forEach(function( key, value ){
 
 //updating values
 a.set('Lockheed', 'peach');
-a.values(); // ['peach','banana']
+a.values(); //['peach','banana']
 
 //clear
 a.clear();
-a.values(); // []
+a.values(); //[]
 
 //accessing properties directly
 a.arr = ['Grumman','Cessna','Bellanca'];
@@ -40,6 +40,6 @@ a.dict = {'Grumman':'Yankee','Cessna':'172','Bellanca':'Citabria'}
 
 //sorting
 a.arr.sort(); //using built-in Array.prototype.sort()
-a.values(); // ['Citabria','172','Yankee']
+a.values(); //['Citabria','172','Yankee']
 
 ```
