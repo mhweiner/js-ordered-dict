@@ -14,13 +14,13 @@
 			this.dict[key] = val;
 			return this.dict[key];
 		},
-		get: function(key) {
+		get: function(key){
 			return this.dict[key];
 		},
-		has: function(key) {
+		has: function(key){
 			return !!this.dict[key];
 		},
-		remove: function(key) {
+		remove: function(key){
 			for (var i = 0, l = this.arr.length; i < l; i++) {
 				if (this.arr[i] === key) {
 					this.arr.splice(i, 1);
@@ -33,23 +33,23 @@
 			this.arr.splice(index, 0, key);
 			this.dict[key] = val;
 		},
-		forEach: function(callback) {
+		forEach: function(callback){
 			for (var i = 0, l = this.arr.length; i < l; i++) {
 				var key = this.arr[i],
 					val = this.dict[key];
 				callback(key, val);
 			}
 		},
-		sort: function() {
+		sort: function(){
 			//to be overridden
 		},
-		size: function() {
+		size: function(){
 			return this.arr.length;
 		},
-		keys: function() {
+		keys: function(){
 			return this.arr;
 		},
-		values: function() {
+		values: function(){
 			var vals = [],
 				len = this.arr.length;
 			for(var i = 0; i < len; i++){
@@ -57,7 +57,7 @@
 			}
 			return vals;
 		},
-		clear: function() {
+		clear: function(){
 			this.dict = {};
 			this.arr = [];
 		}
@@ -67,7 +67,7 @@
 	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
 		module.exports = OrderedDict;
 	} else if (typeof define === 'function' && define.amd) {
-		define([], function() {
+		define([], function(){
 			return OrderedDict;
 		});
 	} else {
