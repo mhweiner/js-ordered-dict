@@ -5,21 +5,21 @@ A simple, extendable, sortable JavaScript OrderedDict.
 
 ```js
 var a = new OrderedDict();
-a.set('Lockheed','orange');
-a.set('Boeing','apple');
-a.set('Cessna','banana');
+a.set('Lockheed','P-104 Starfighter');
+a.set('Boeing','777');
+a.set('Cessna','172');
 
-a.values(); //['orange','apple','banana'] (respects order)
+a.values(); //['P-104 Starfighter','777','172'] (respects order)
 a.keys(); //['Lockheed','Boeing','Cessna'] (respects order)
-a.get('Three'); //'banana'
-a.has('Two'); //true
+a.get('Cessna'); //'172'
+a.has('Boeing'); //true
 
 //length
 a.size(); //3
 
 //removal
-a.remove('Two');
-a.values(); //['orange','banana']
+a.remove('Boeing');
+a.values(); //['P-104 Starfighter','172']
 
 //iteration
 a.forEach(function( key, value ){
@@ -27,8 +27,14 @@ a.forEach(function( key, value ){
 });
 
 //updating values
-a.set('Lockheed', 'peach');
-a.values(); //['peach','banana']
+a.set('Lockheed', 'SR-71');
+a.values(); //['SR-71','172']
+
+//inserting items at a certain position
+a.size(); //2
+a.insert(1, 'Honda', {'model': 'HondaJet'});
+a.values(); //['SR-71',{'model': 'HondaJet'},'172']
+a.size(); //3
 
 //clear
 a.clear();
