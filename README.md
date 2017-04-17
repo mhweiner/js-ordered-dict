@@ -1,5 +1,5 @@
 # OrderedDict
-Javascript OrderedDict
+A simple, extendable, sortable JavaScript OrderedDict.
 
 ## Example Usage
 
