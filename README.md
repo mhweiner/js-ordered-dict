@@ -36,7 +36,7 @@ a.values(); //[]
 
 //accessing properties directly
 a.arr = ['Grumman','Cessna','Bellanca']; //keys (and order) go here
-a.dict = {'Grumman':'Yankee','Cessna':'172','Bellanca':'Citabria'} //dict goes here
+a.dict = {'Grumman':'Yankee', 'Cessna':'172', 'Bellanca':'Citabria'} //dict goes here
 
 //sorting
 a.arr.sort(); //using built-in Array.prototype.sort()
