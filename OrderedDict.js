@@ -60,15 +60,12 @@
 	//export
 	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
 		module.exports = OrderedDict;
+	} else if (typeof define === 'function' && define.amd) {
+		define([], function() {
+			return OrderedDict;
+		});
 	} else {
-		if (typeof define === 'function' && define.amd) {
-			define([], function() {
-				return OrderedDict;
-			});
-		}
-		else {
-			root.OrderedDict = OrderedDict;
-		}
+		root.OrderedDict = OrderedDict;
 	}
 
 })(this);
