@@ -5,12 +5,12 @@ Javascript OrderedDict
 
 ```js
 var a = new OrderedDict();
-a.set('One','orange');
-a.set('Two','apple');
-a.set('Three','banana');
+a.set('Lockheed','orange');
+a.set('Boeing','apple');
+a.set('Cessna','banana');
 
-a.values(); // ['orange','apple','banana']
-a.keys(); // ['One','Two','Three']
+a.values(); // ['orange','apple','banana'] (respects order)
+a.keys(); // ['Lockheed','Boeing','Cessna'] (respects order)
 a.get('Three'); // 'banana'
 a.has('Two'); // true
 
@@ -27,14 +27,19 @@ a.forEach(function( key, value ){
 });
 
 //updating values
-a.set('One', 'peach');
+a.set('Lockheed', 'peach');
 a.values(); // ['peach','banana']
 
 //clear
 a.clear();
 a.values(); // []
 
+//accessing properties directly
+a.arr = ['Grumman','Cessna','Bellanca'];
+a.dict = {'Grumman':'Yankee','Cessna':'172','Bellanca':'Citabria'}
+
 //sorting
-a
+a.arr.sort(); //using built-in JavaScript [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+a.values(); // ['Citabria','172','Yankee']
 
 ```
