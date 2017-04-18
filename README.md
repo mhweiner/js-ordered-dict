@@ -16,6 +16,7 @@ a.values(); //['P-104 Starfighter','777','172'] (note: respects order)
 a.keys(); //['Lockheed','Boeing','Cessna'] (note: respects order)
 a.get('Cessna'); //'172'
 a.has('Boeing'); //true
+a.nth(0); //'P-104 Starfighter' //get value at index
 
 //length
 a.size(); //3
@@ -33,7 +34,7 @@ a.forEach(function( key, value ){
 a.set('Lockheed', 'SR-71');
 a.values(); //['SR-71','172']
 
-//inserting items at a certain position
+//inserting values at a certain position
 a.size(); //2
 a.insert(1, 'Honda', {'model': 'HondaJet'});
 a.values(); //['SR-71',{'model': 'HondaJet'},'172']
