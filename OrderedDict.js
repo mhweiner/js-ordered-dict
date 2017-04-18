@@ -17,6 +17,9 @@
 		get: function(key){
 			return this.dict[key];
 		},
+		nth: function(index){
+			return this.dict[arr[index]];
+		},
 		has: function(key){
 			return !!this.dict[key];
 		},
