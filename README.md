@@ -1,6 +1,12 @@
 # OrderedDict
 A simple, extendable, sortable JavaScript OrderedDict.
 
+## Installation
+
+```bash
+npm i js-ordered-dict
+```
+
 ## Example Usage
 
 ```js
@@ -53,3 +59,11 @@ a.arr.sort(); //using built-in Array.prototype.sort()
 a.values(); //['172','Yankee','SR-72']
 
 ```
+
+## License
+
+[MIT](https://github.com/mhweiner/mr-router/blob/master/LICENSE). Free to use in all your things!
+
+## Contribution
+
+DO IT! PR's welcome. Need to add testing and linting.
