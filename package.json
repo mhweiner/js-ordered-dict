@@ -1,7 +1,7 @@
 {
   "name": "js-ordered-dict",
   "description": "A simple, extendable, sortable JavaScript OrderedDict.",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "main": "src/index.js",
   "repository": {
     "type": "git",
