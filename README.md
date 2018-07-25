@@ -32,7 +32,7 @@ a.remove('Boeing');
 a.values(); //['Citabria','Cub']
 
 //iteration
-a.forEach(function( key, value ){
+a.forEach((value, key) => {
   ...
 });
 

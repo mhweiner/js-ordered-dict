@@ -45,8 +45,8 @@ OrderedDict.prototype = {
   forEach: function(callback){
     for (let i = 0, l = this.arr.length; i < l; i++) {
       let key = this.arr[i],
-        val = this.dict[key];
-      callback(key, val);
+          val = this.dict[key];
+      callback(val, key);
     }
   },
 
