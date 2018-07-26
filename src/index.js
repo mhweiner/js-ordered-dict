@@ -79,7 +79,7 @@ OrderedDict.prototype = {
   clone: function(){
     let d = new OrderedDict();
     d.dict = JSON.parse(JSON.stringify(this.dict));
-    d.arr = this.arr;
+    d.arr = JSON.parse(JSON.stringify(this.arr));
     return d;
   }
 };
