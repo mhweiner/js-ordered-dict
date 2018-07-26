@@ -58,6 +58,13 @@ a.dict = {'Lockheed':'SR-72', 'Grumman':'Yankee', 'Cessna':'172'} //dict goes he
 a.arr.sort(); //using built-in Array.prototype.sort()
 a.values(); //['172','Yankee','SR-72']
 
+//clone
+let d = new OrderedDict();
+d.set('foo', 'bar');
+
+let a = d.clone();
+a.get('foo'); //'bar'
+
 ```
 
 ## License

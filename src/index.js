@@ -74,6 +74,13 @@ OrderedDict.prototype = {
   clear: function(){
     this.dict = {};
     this.arr = [];
+  },
+
+  clone: function(){
+    let d = new OrderedDict();
+    d.dict = this.dict;
+    d.arr = this.arr;
+    return d;
   }
 };
 
