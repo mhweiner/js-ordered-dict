@@ -106,6 +106,24 @@ OrderedDict.prototype = {
 
   },
 
+  firstKey: function() {
+
+    return this.arr[0];
+
+  },
+
+  lastKey: function() {
+
+    return this.arr[this.arr.length - 1];
+
+  },
+
+  keyAtIndex: function(n) {
+
+    return this.arr[n];
+
+  },
+
   values: function() {
 
     let vals = [],

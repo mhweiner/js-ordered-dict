@@ -24,7 +24,10 @@ a.get('Piper'); //'Cub'
 a.has('Boeing'); //true
 a.first(); //'Citabria'
 a.last(); //'Cub'
-a.nth(1); //'777' //get value at index
+a.nth(1); //'777'
+a.firstKey(); //'Bellanca'
+a.lastKey(); //'Piper'
+a.keyAtIndex(1); //'Boeing'
 
 //length
 a.size(); //3
