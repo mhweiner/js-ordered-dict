@@ -22,7 +22,9 @@ a.values(); //['Citabria','777','Cub'] (note: respects order of entry)
 a.keys(); //['Bellanca','Boeing','Piper'] (note: respects order of entry)
 a.get('Piper'); //'Cub'
 a.has('Boeing'); //true
-a.nth(0); //'Citabria' //get value at index
+a.first(); //'Citabria'
+a.last(); //'Cub'
+a.nth(1); //'777' //get value at index
 
 //length
 a.size(); //3
@@ -49,10 +51,6 @@ a.size(); //3
 //clear
 a.clear();
 a.values(); //[]
-
-//accessing properties directly
-a.arr = ['Lockheed', 'Grumman', 'Cessna']; //keys (and order) go here
-a.dict = {'Lockheed':'SR-72', 'Grumman':'Yankee', 'Cessna':'172'} //dict goes here
 
 //sorting
 a.arr.sort(); //using built-in Array.prototype.sort()
