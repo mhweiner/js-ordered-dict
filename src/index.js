@@ -1,10 +1,3 @@
-function OrderedDict() {
-
-  this.dict = {};
-  this.arr = [];
-
-}
-
 OrderedDict.prototype = {
 
   set: function(key, val) {
@@ -68,7 +61,7 @@ OrderedDict.prototype = {
 
   insert: function(index, key, val) {
 
-    if (this.arr.indexOf(key) !== -1) throw 'key `' + key + '` already exists';
+    if (this.arr.indexOf(key) !== -1) throw new Error('key `' + key + '` already exists');
 
     this.arr.splice(index, 0, key);
     this.dict[key] = val;
@@ -102,7 +95,7 @@ OrderedDict.prototype = {
 
   keys: function() {
 
-    return this.arr;
+    return Array.from(this.arr);
 
   },
 
@@ -147,12 +140,18 @@ OrderedDict.prototype = {
   },
 
   clone: function() {
-
     let d = new OrderedDict();
-
-    d.dict = JSON.parse(JSON.stringify(this.dict));
-    d.arr = JSON.parse(JSON.stringify(this.arr));
-
+    
+    d.arr = this.keys()
+    
+    for (let i = 0, l = d.arr.length, k; i < l; i++) {
+      
+      k=d.arr[i];
+      
+      d.dict[k] = this.dict[k]
+      
+    }
+    
     return d;
 
   }
