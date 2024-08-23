@@ -1,3 +1,10 @@
+# DEPRECATED: OrderedDict
+This project is no longer maintained. Modern JavaScript features such as `Map` and `Set` now offer built-in alternatives. Please consider using those instead.
+
+Thank you for your support, and I encourage you to check out my other open source projects on GitHub:
+
+https://github.com/mhweiner
+
 # OrderedDict
 A simple, extendable, sortable JavaScript OrderedDict.
 
